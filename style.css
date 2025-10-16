@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: url("af.jpg") no-repeat center center fixed; 
+  background-size: cover;   /* image ko full screen fit karega */
+  color: aliceblue;
+  text-shadow: 0 0 10px #000000, 0 0 20px #00ffa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  color: aliceblue;
+  text-shadow: 0 0 10px #000000, 0 0 20px #00ffa6;
+  min-height: 100vh;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;        /* 👈 ye add karna zaroori hai */
+  left: 0;       /* 👈 ye bhi */
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/* Navbar with gradient */
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #111111, #222, #111);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ed19ad;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ff00d4;
+}
+
+/* Container with transparent background */
+.
+
+/* Title with glow */
+h1 {
+  color: #f200ff;
+  text-shadow: 0 0 10px #000000, 0 0 20px #40ff00;
+}
+
+/* Clock box with gradient */
+.clock {
+  font-size: 60px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(83, 177, 171, 0.7), rgba(102, 36, 124, 0.7));
+  color: #ffffff;
+  text-shadow: 0 0 15px #bf00ff, 0 0 25px #ff0073;
+  box-shadow: 0 0 20px rgba(112, 0, 24, 0.5);
+}
+
+/* Date text */
+.date {
+  font-size: 20px;
+  color: #f1eff1;
+  text-shadow: 0 0 10px #ff66eb;
+}
+
+/* Row layout for multiple clocks */
+.clock-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+   background: linear-gradient(135deg, rgba(45, 146, 146, 0.7), rgba(102, 36, 124, 0.7));
+  color: #ffffff;
+  text-shadow: 0 0 15px #bf00ff, 0 0 25px #ff0073;
+  border-radius: 15px;
+  backdrop-filter: blur(3px); /* Adds a blur effect */
+}
+
+/* Row contents */
+.country {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff8c;
+  width: 25%;
+}
+.time {
+  font-size: 24px;
+  color: #00ff99;
+  width: 35%;
+  text-align: center;
+}
+.date-row {
+  font-size: 18px;
+  color: #66ff9e;
+  width: 35%;
+  text-align: right;
+}
